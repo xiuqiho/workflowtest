@@ -40,7 +40,7 @@ Any changes to the repository MUST be first done on a `ui/<feature_name>`, `back
 2. Issues for feature components are **ADVICED** to be created to help with tracking feature progress
 3. Issues **MUST** be assigned to **at least ONE** team member
 4. Issues **MUST** be given an appropriate label (e.g. `UI` / `backend` / `documentation`)
-5. Issues **MUST** be assigned to the `M3 Milestone`
+5. Issues **MUST** be assigned to the `M3` milestone
 6. Issues **MUST NOT** be closed until corresponding feature is completed and merged with `dev` or `main` branch
 ### Feature Branch Management
 1. Features **MUST** have a corresponding branch created for it
@@ -60,7 +60,7 @@ Any changes to the repository MUST be first done on a `ui/<feature_name>`, `back
 4. Final action to merge the feature branch with `dev` branch **MUST** be done by the **_Team Lead_** after receiving all 4 approvals
 
 ## Standard Operating Procedures (SOP)
-### Starting an Assigned Feature
+### I. Starting an Assigned Feature
 1. Create **HIGH-priority** issue on team's GitHub project board
 2. Create corresponding type of feature branch based off current `dev` branch
 ```bash
@@ -81,7 +81,7 @@ git commit -am "initial commit for <feature_type>/<feature_name> branch"
 # Push the newly created feature branch onto GitHub repo
 git push --set-upstream origin <feature_type>/<feature_name>
 ```
-### Save Feature progress
+### II. Save Feature progress
 1. Commit and push **WORKING** version of feature with newly added component (do this the moment a feature component is deemed completed)
 ```bash
 # Commit changes with a meaningful commit message
@@ -90,15 +90,62 @@ git commit -am "[ADDED]|[REMOVED]|[MODIFIED] <feature>'s <feature_component> ...
 # Push changes into corresponding feature branch on GitHub repo
 git push
 ```
-### Merging a Completed Feature branch with Development branch
+### III. Merging a Completed Feature branch with Development branch
 1. Go to `https://github.com/team-p4-5/ICT2101-p4-5/pulls` in a web browser
-2. Click on `New pull request` button
+2. Click on the `New pull request` button
 3. Select `dev` in the `base:___` dropdown list
 4. Select corresponding feature branch in the `compare:___` dropdown list
+5. Click on the `Create pull request` button
+6. Input meaningful PR **_title_** and **_comment_**
+7. Select 4 reviewers aside from yourself under `Reviewers` settings
+8. Assign yourself under `Assignees` settings
+9. Assign `Labels` according to the type of the feature involved in this PR
+10. Assign the PR to the corresponding `ICT2101/2201 Team Project` project and `M3` milestone
+11. Click on the `Create pull request` button
+12. Once all 4 approvals have been given, click on the `Merge pull request` button on the newly created PR's page
+13. Input meaningful merge **_title_** and **_message_**
+14. Click on the `Confirm merge` button
+15. Close the corresponding issue for the feature
 
-### Merging Development branch with Main branch
-1. 
+### IV. Merging Development branch with Main branch
+1. Go to `https://github.com/team-p4-5/ICT2101-p4-5/pulls` in a web browser
+2. Click on the `New pull request` button
+3. Select `main` in the `base:___` dropdown list
+4. Select `dev` in the `compare:___` dropdown list
+5. Click on the `Create pull request` button
+6. Input meaningful PR **_title_** and **_comment_**
+7. Select 4 reviewers aside from yourself (**_the Team Lead_**) under `Reviewers` settings
+8. Assign yourself (**_the Team Lead_**) under `Assignees` settings
+9. Assign the PR to the corresponding `ICT2101/2201 Team Project` project and `M3` milestone
+10. Click on the `Create pull request` button
+11. Once all 4 approvals have been given, click on the `Merge pull request` button on the newly created PR's page
+12. Input meaningful merge **_title_** and **_message_**
+13. Click on the `Confirm merge` button
 
-### Making changes / hotfixes to a completed Feature (closed issue)
-1. 
 
+### V. Making changes / hotfixes to a completed Feature (closed issue)
+1. Create a **HIGH-priority** [HOTFIX] issue on team's GitHub project board
+2. Upon completing the hotfix implementation, commit and push **WORKING** version of feature
+```bash
+# Commit changes with a meaningful commit message
+git commit -am "[HOTFIX] <feature>'s <feature_component> ..."
+
+# Push changes into corresponding feature branch on GitHub repo
+git push
+```
+3. Perform Procedure (III) for merging hotfixed feature branch into dev
+4. Close the corresponding [HOTFIX] issue
+
+---
+## User Acceptance Test
+### Use Case Diagram
+### System State Diagram
+### Full System Test Video
+
+---
+## Whitebox Testing
+### Selected Class for WB Testing Showcase
+### Whitebox Test Cases
+### Whitebox Test Suite Execution Instructions
+### Full Test Suite Execution Video
+___
