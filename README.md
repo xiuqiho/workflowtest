@@ -1,5 +1,4 @@
 # ICT2101-p4-5
-ICT2101 Team P4-5's (Lil' Runners) Project Repo for "Little Runner"
 [![Little Runner, by Team P4-5 (Lil' Runners)](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=by%20Team%20P4-5%20Lil'%20Runners&title=Little%20Runner)](#)
 
 ### Team Members
@@ -36,12 +35,20 @@ ICT2101 Team P4-5's (Lil' Runners) Project Repo for "Little Runner"
 ## Team P4-5's Workflow
 ## Rules
 ### Issue Management
+1. An issue MUST be created for each assigned feature
+2. Issues for feature components are ADVICED to be created to help with tracking feature progress
+3. Issues MUST be assigned to at least ONE team member
+4. Issues MUST be given an appropriate label (e.g. `UI` / `backend` / `documentation`)
+5. Issues MUST be assigned to the `M3 Milestone`
 ### Feature Branch Management
+
 ### Development Branch Management
 ### Main Branch Management
 
 ## Standard Operating Procedures (SOP)
-### Starting an Assigned `feature`
-### Track and Save `feature` progress
-### Merging a Completed `feature` branch with `dev` branch
+### Starting an Assigned Feature
+### Track and Save Feature progress
+### Merging a Completed Feature branch with Development branch
+### Merging Development branch with Main branch
+
 
