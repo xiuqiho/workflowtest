@@ -62,7 +62,7 @@ Any changes to the repository MUST be first done on a `ui/<feature_name>`, `back
 ## Standard Operating Procedures (SOP)
 ### Starting an Assigned Feature
 1. Create **HIGH-priority** issue on team's GitHub project board
-2. Create corresponding feature branch based off current `dev` branch
+2. Create corresponding type of feature branch based off current `dev` branch
 ```bash
 # Creating a new `ui` feature
 git checkout -b ui/<ui_feature_name> dev
@@ -75,20 +75,30 @@ git checkout -b management/<management_feature_name> dev
 ```
 3. After making initial changes, create this new feature branch on GitHub repo
 ```bash
-# Push the newly created feature branch onto GitHub repo
+# Commit the newly created feature branch with a meaningful message
 git commit -am "initial commit for <feature_type>/<feature_name> branch"
+
+# Push the newly created feature branch onto GitHub repo
 git push --set-upstream origin <feature_type>/<feature_name>
 ```
 ### Save Feature progress
 1. Commit and push **WORKING** version of feature with newly added component (do this the moment a feature component is deemed completed)
 ```bash
-# Commit changes with meaningful commit message
+# Commit changes with a meaningful commit message
 git commit -am "[ADDED]|[REMOVED]|[MODIFIED] <feature>'s <feature_component> ..."
 
 # Push changes into corresponding feature branch on GitHub repo
 git push
 ```
 ### Merging a Completed Feature branch with Development branch
+1. Go to `https://github.com/team-p4-5/ICT2101-p4-5/pulls` in a web browser
+2. Click on `New pull request` button
+3. Select `dev` in the `base:___` dropdown list
+4. Select corresponding feature branch in the `compare:___` dropdown list
+
 ### Merging Development branch with Main branch
+1. 
+
 ### Making changes / hotfixes to a completed Feature (closed issue)
+1. 
 
