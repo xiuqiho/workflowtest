@@ -44,24 +44,50 @@ Any changes to the repository MUST be first done on a `ui/<feature_name>`, `back
 6. Issues **MUST NOT** be closed until corresponding feature is completed and merged with `dev` or `main` branch
 ### Feature Branch Management
 1. Features **MUST** have a corresponding branch created for it
-..* `ui/<ui_feature_name>` for Web UI related features
-..* `backend/<backend_feature_name>` for backend code related features
-..*	`management/<management_type_name>` for project / repo management related features (e.g. README.md changes)
-2. Pushes to feature branch should only be done after completing a **working** version of the feature component / feature
+- `ui/<ui_feature_name>` for Web UI related features
+- `backend/<backend_feature_name>` for backend code related features
+- `management/<management_feature_name>` for project / repo management related features (e.g. README.md changes)
+2. Pushes to feature branch should only be done after completing a **WORKING** version of the feature component / feature
 ### Development Branch Management
-1. Only **COMPLETED** `ui`, `backend`, or `management` feature branches can be merged into `dev` branch
+1. Only **COMPLETED** `ui`, `backend`, or `management` feature branches can be merged into the `dev` branch
 2. Pull Requests (PR) to merge should be done through GitHub's web UI
-3. PRs should be created by assigning exactly 4 other team mates for review and approval
+3. Pull Requests should be created by assigning exactly 4 other team mates for review and approval
 4. Final action to merge the feature branch with `dev` branch **MUST** be done by the PR initiater after receiving all 4 approvals
 ### Main Branch Management
-1. Only `dev` branch can be merged into `main` branch
+1. Only `dev` branch can be merged into the `main` branch
 2. Pull Requests (PR) to merge should be done through GitHub's web UI
-3. PRs should be created by the `Team Lead` and assigned to exactly 4 other team mates for review and approval
-4. Final action to merge the feature branch with `dev` branch **MUST** be done by the `Team Lead` after receiving all 4 approvals
+3. Pull Requests should be created by the **_Team Lead_** and assigned to exactly 4 other team mates for review and approval
+4. Final action to merge the feature branch with `dev` branch **MUST** be done by the **_Team Lead_** after receiving all 4 approvals
 
 ## Standard Operating Procedures (SOP)
 ### Starting an Assigned Feature
-### Track and Save Feature progress
+1. Create **HIGH-priority** issue on team's GitHub project board
+2. Create corresponding feature branch based off current `dev` branch
+```bash
+# Creating a new `ui` feature
+git checkout -b ui/<ui_feature_name> dev
+
+# Creating a new `backend` feature
+git checkout -b backend/<backend_feature_name> dev
+
+# Creating a new `management` feature
+git checkout -b management/<management_feature_name> dev
+```
+3. After making initial changes, create this new feature branch on GitHub repo
+```bash
+# Push the newly created feature branch onto GitHub repo
+git commit -am "initial commit for <feature_type>/<feature_name> branch"
+git push --set-upstream origin <feature_type>/<feature_name>
+```
+### Save Feature progress
+1. Commit and push **WORKING** version of feature with newly added component (do this the moment a feature component is deemed completed)
+```bash
+# Commit changes with meaningful commit message
+git commit -am "[ADDED]|[REMOVED]|[MODIFIED] <feature>'s <feature_component> ..."
+
+# Push changes into corresponding feature branch on GitHub repo
+git push
+```
 ### Merging a Completed Feature branch with Development branch
 ### Merging Development branch with Main branch
 ### Making changes / hotfixes to a completed Feature (closed issue)
