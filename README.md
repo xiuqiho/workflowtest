@@ -1,6 +1,6 @@
 # ICT2101-p4-5
 ICT2101 Team P4-5's (Lil' Runners) Project Repo for "Little Runner"
-[![Little Runner, by Team P4-5 (Lil' Runners)](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=by%20Team%20P4-5 (Lil' Runners)&title=Little%20Runner)](#)
+[![Little Runner, by Team P4-5 (Lil' Runners)](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=by%20Team%20P4-5%20Lil'%20Runners&title=Little%20Runner)](#)
 
 ### Team Members
 - Ho Xiu Qi                   ```Team Lead``` - ```1802962@sit.singaporetech.edu.sg```
@@ -29,7 +29,7 @@ ICT2101 Team P4-5's (Lil' Runners) Project Repo for "Little Runner"
 ### Running the program
 1. Navigate to root directory of project (where run.py is)
 2. Execute the command `python run.py`
-3. Open any web browser and navigate to "localhost"
+3. Open any web browser and navigate to `localhost`
 
 ---
 
@@ -41,7 +41,7 @@ ICT2101 Team P4-5's (Lil' Runners) Project Repo for "Little Runner"
 ### Main Branch Management
 
 ## Standard Operating Procedures (SOP)
-### Starting an Assigned *`feature`*
-### Track and Save *`feature`* progress
-### Merging a Completed *`feature`* branch with *`dev`* branch
+### Starting an Assigned `feature`
+### Track and Save `feature` progress
+### Merging a Completed `feature` branch with `dev` branch
 
