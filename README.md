@@ -25,7 +25,7 @@
 1. Navigate to root directory of project (where requirements.txt is)
 2. Execute the command `pip install -r requirements.txt`
 
-### Running the program
+### How to run
 1. Navigate to root directory of project (where run.py is)
 2. Execute the command `python run.py`
 3. Open any web browser and navigate to `localhost`
@@ -38,10 +38,11 @@ Any changes to the repository MUST be first done on a `ui/<feature_name>`, `back
 ### Issue Management
 1. An issue **MUST** be created for each assigned feature
 2. Issues for feature components are **ADVICED** to be created to help with tracking feature progress
-3. Issues **MUST** be assigned to **at least ONE** team member
-4. Issues **MUST** be given an appropriate label (e.g. `UI` / `backend` / `documentation`)
-5. Issues **MUST** be assigned to the `M3` milestone
-6. Issues **MUST NOT** be closed until corresponding feature is completed and merged with `dev` or `main` branch
+3. Issue titles **MUST** start with `[<feature_type>/<feature_name>]`
+4. Issues **MUST** be assigned to **at least ONE** team member
+5. Issues **MUST** be given the appropriate label(s) (e.g. `ui` / `backend` / `management` / `hotfix`)
+6. Issues **MUST** be assigned to the `M3` milestone
+7. Issues **MUST NOT** be closed until corresponding feature is completed and merged with `dev` or `main` branch
 ### Feature Branch Management
 1. Features **MUST** have a corresponding branch created for it
 - `ui/<ui_feature_name>` for Web UI related features
@@ -122,9 +123,8 @@ git push
 12. Input meaningful merge **_title_** and **_message_**
 13. Click on the `Confirm merge` button
 
-
 ### V. Making changes / hotfixes to a completed Feature (closed issue)
-1. Create a **HIGH-priority** [HOTFIX] issue on team's GitHub project board
+1. Create a **HIGH-priority** `[<feature_type>/<feature_name>] [HOTFIX]` issue on team's GitHub project board with the appropriate feature label and `hotfix` label
 2. Upon completing the hotfix implementation, commit and push **WORKING** version of feature
 ```bash
 # Commit changes with a meaningful commit message
@@ -133,8 +133,16 @@ git commit -am "[HOTFIX] <feature>'s <feature_component> ..."
 # Push changes into corresponding feature branch on GitHub repo
 git push
 ```
-3. Perform Procedure (III) for merging hotfixed feature branch into dev
+3. Perform procedure (III) for merging hotfixed feature branch into dev
 4. Close the corresponding [HOTFIX] issue
+
+### VI. Approving a Pull Request
+1. Open the PR where you have been assigned as a Reviewer
+2. Select the `Add your review` button
+3. After reviewing the changes, select the `Review changes` button
+4. Input a review **_comment_** in the popup window
+5. Select the `Approve` radio button
+6. Select the `Submit review` button
 
 ---
 ## User Acceptance Test
